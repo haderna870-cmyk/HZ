@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>منتجاتنا | HZ Steel</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111820;
+            color: white;
+        }
+
+        header {
+            background-color:#1c2732;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        .logo {
+            color: #1c2732;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #D4AF37;
+        }
+
+        .products {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #D4AF37;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            color: #cccccc;
+            margin-bottom: 40px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .product {
+            background-color: #1c2732;
+            border: 1px solid #D4AF37;
+            border-radius: 8px;
+            padding: 30px 20px;
+            width: 280px;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            background-color: #253340;
+        }
+
+        .product h2 {
+            color: #D4AF37;
+            font-size: 23px;
+        }
+
+        .product p {
+            color: #dddddd;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #080c10;
+            color: #D4AF37;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">HZ STEEL</div>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="#products">منتجاتنا</a>
+        </nav>
+    </header>
+
+    <main class="products" id="products">
+        <h1>منتجاتنا</h1>
+
+        <p class="intro">
+            نقدم مجموعة من منتجات الحديد والصلب لتلبية احتياجات عملائنا.
+        </p>
+
+        <div class="product-list">
+
+            <div class="product">
+                <h2>الخوص الحديد</h2>
+                <p>خوص حديد بمقاسات متنوعة للاستخدامات الصناعية المختلفة.</p>
+            </div>
+
+            <div class="product">
+                <h2>الزوايا الحديد</h2>
+                <p>زوايا حديدية مناسبة للأعمال الإنشائية والتصنيعية.</p>
+            </div>
+
+            <div class="product">
+                <h2>الكمر الحديد</h2>
+                <p>قطاعات كمر حديدية للمشروعات الصناعية والإنشائية.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        © HZ STEEL - جميع الحقوق محفوظة
+    </footer>
+
+</body>
+</html>
